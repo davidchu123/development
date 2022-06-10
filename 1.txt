@@ -1,0 +1,29 @@
+**** Database server inventory questions
+
+wsevr
+sqlmi
+nop paas db
+cdw
+es3 data sync
+
+
+
+Env Support to start the decom on 
+
+
+Any HADR POC will be conducted on Azures IaaS VM’s
+
+
+WSEVR (on Prem or SQL MI) to the NOP PaaS db.
+
+And there is a Azure PaaS sql server /db involved for Azure data sync meta data.
+Server name is  as-pr-sqldatasyncmetadata-sql01.database.windows.net and DB name is as-pr-sqldatasyncmetadata-db01 .
+
+
+DATASYNCP01, NOP PaaS DB ->  NOPRP on Prem, WSEVR on Prem -> NOP PaaS db,   ES3 PaaS DB  -> ES3 DB on SQLP38ISS and SQLP10BI 
+DATASYNCS02,  NOP PaaS DB ->  NOPRP on Prem, WSEVR on Prem -> NOP PaaS db
+DATASYNCT03,  NOP PaaS DB ->  NOPRP on Prem, WSEVR on Prem -> NOP PaaS db
+
+
+
+Datasync may not be the recommended replication tool now, at least it is stable and rarely fails and requires minimum DBA intervention.
