@@ -1,3 +1,6 @@
+-- new line can be delete as well.
+
+
 **** Database server inventory questions
 
 wsevr
